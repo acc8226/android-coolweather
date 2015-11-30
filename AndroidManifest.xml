@@ -11,7 +11,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -24,6 +24,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.WeatherActivity"></activity>
+        <receiver android:name="likai.weather.receiver.AutoUpdateReceiver"></receiver>
+        <service android:name="likai.weather.service.AutoUpdateService"></service>
     </application>
 
 </manifest>
